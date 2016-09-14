@@ -1,2 +1,2 @@
 # Explorer
-This repository include all the project files of Explorer.
+This repository include all the project files of Explorer API.
