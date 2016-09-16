@@ -34,37 +34,25 @@
   </head>
   <body ng-app="starter">
 
-    <ion-pane class="home-screen">
+    <ion-pane class="login-screen">
+      <img class="login-cloud1" src="img/clouds-02.png" />
+      <img class="login-cloud2" src="img/clouds-01.png" />
 
       <ion-content>
 
-        <img class="home-logo" src="img/logo-1.png" />
-        <img class="home-cloud1" src="img/clouds-01.png" />
-        <img class="home-cloud2" src="img/clouds-01.png" />
+        <form class="login-form">
 
-        <h4 class="home-header">Ready for take off ?</h4>
+          <label>E-MAIL</label>
+          <input type="email" name="email" value="abu@gmail.com" />
 
-       <div class="home-button">
-         <a href="join.html">
-           <button class="button-calm">
-             JOIN THE CREW
-           </button>
-         </a>
+          <label>PASSWORD</label>
+          <input type="password" name="password" value="*********" />
 
-         <br />
-         <a href="login.html">
-           <button class="button-calm">
-             LOGIN
-           </button>
-         </a>
+          <input type="submit" name="button" value="AND OFF WE GO!" class="login-submit" />
 
-       </div>
-
-
-
+        </form>
 
       </ion-content>
-
     </ion-pane>
 
 

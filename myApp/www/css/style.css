@@ -1,1 +1,187 @@
-/* Empty. Add your own CSS if you like */
+/* Style for welcome page starts */
+
+.home-screen{
+  background-color: #00C8E2;
+}
+
+.home-logo{
+  width: 350px;
+  height: 150px;
+  position: relative;
+  left: -12px;
+  top: 85px;
+}
+
+.home-cloud1{
+  width: 150px;
+  height: 120px;
+  position: relative;
+  top: 65px;
+  left: 240px;
+}
+
+.home-cloud2{
+  width: 150px;
+  height: 120px;
+  position: relative;
+  top: 155px;
+  left: -175px;
+
+  -ms-transform: rotate(200deg); /* IE 9 */
+    -webkit-transform: rotate(200deg); /* Chrome, Safari, Opera */
+    transform: rotate(200deg);
+
+}
+.home-header{
+  position: relative;
+  top: 185px;
+  text-align: center;
+  font-weight:normal;
+  color: white;
+}
+
+.home-button{
+  text-align: center;
+  position: relative;
+  top: 190px;
+}
+.button-calm{
+  margin-bottom: 15px;
+  text-align: center;
+  width: 230px;
+  height: 52px;
+  font-size: 175%;
+  font-weight: bold;
+  color: white;
+  border: 2px solid #fff;
+  background-color: transparent;
+  border-radius: 18px;
+}
+
+/*style welcome page ends*/
+
+/*style for join us page starts*/
+
+.join-screen{
+  background-color: #00C8E2;
+}
+
+.join-cloud{
+  width: 170px;
+  height: 130px;
+  position: relative;
+  top: -10px;
+  left: 240px;
+}
+
+.join-form{
+  position: relative;
+  top: 140px;
+  width: 80%;
+  margin-left: 10%;
+
+}
+
+.join-form label{
+  font-size: 160%;
+  font-weight:600;
+  color: #053C52;
+}
+
+.join-form input{
+  width: 300px;
+  height: 34px;
+  background-color: transparent;
+  border: 2px solid #053c52;
+  border-radius: 7px;
+  margin-bottom: 20px;
+  font-size: 150%;
+  color: #fff;
+  padding-left: 15px;
+  text-transform: capitalize;
+}
+
+.join-form .join-submit{
+  margin-bottom: 15px;
+  text-align: center;
+  width: 80%;
+  height: 52px;
+  font-size: 180%;
+  font-weight: bold;
+  color: white;
+  border: 2px solid #fff;
+  background-color: transparent;
+  border-radius: 18px;
+  margin-left: 10%;
+  margin-top: 10px;
+}
+
+
+/*style for join us page ends*/
+
+/*style for login page starts*/
+
+.login-screen{
+  background-color: #00C8E2;
+}
+
+.login-cloud1{
+  width: 250px;
+  height: 150px;
+  position: relative;
+  top: 30px;
+  left: -80px;
+}
+
+.login-cloud2{
+  width: 180px;
+  height: 110px;
+  position: relative;
+  top: 10px;
+  left: 225px;
+}
+
+.login-form{
+  position: relative;
+  top: 300px;
+  width: 80%;
+  margin-left: 10%;
+
+}
+
+.login-form label{
+  font-size: 160%;
+  font-weight:600;
+  color: #053C52;
+}
+
+.login-form input{
+  width: 300px;
+  height: 34px;
+  background-color: transparent;
+  border: 2px solid #053c52;
+  border-radius: 7px;
+  margin-bottom: 20px;
+  font-size: 150%;
+  color: #fff;
+  padding-left: 15px;
+  text-transform: capitalize;
+}
+
+.login-form .login-submit{
+  margin-bottom: 15px;
+  text-align: center;
+  width: 80%;
+  height: 52px;
+  font-size: 180%;
+  font-weight: bold;
+  color: white;
+  border: 2px solid #fff; 
+  background-color: transparent;
+  border-radius: 18px;
+  margin-left: 10%;
+  margin-top: 100px;
+}
+
+
+/*style for login page ends*/
