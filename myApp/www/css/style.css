@@ -62,9 +62,41 @@
 
 /*style for join us page starts*/
 
+
+*::-webkit-input-placeholder {
+  color: #fff !important;
+}
+*:-moz-placeholder {
+  color: #fff !important;
+}
+*:-ms-input-placeholder { /* IE10+ */
+  color: #fff !important;
+}
+
+/*
+input[required].ng-pristine{
+  border-color:#e74c3c;
+}*/
+
+input.ng-invalid.ng-dirty{
+  border-color: #E52420;
+}
+
+input.ng-valid.ng-dirty{
+  border-color:#053c52;
+}
+
 .join-screen{
   background-color: #00C8E2;
 }
+
+.tips{
+  float: right;
+  color: #E52420;
+  font-style: italic; 
+}
+
+
 
 .join-cloud{
   width: 170px;
@@ -176,7 +208,7 @@
   font-size: 180%;
   font-weight: bold;
   color: white;
-  border: 2px solid #fff; 
+  border: 2px solid #fff;
   background-color: transparent;
   border-radius: 18px;
   margin-left: 10%;

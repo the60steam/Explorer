@@ -32,35 +32,37 @@
     <!-- your app's js -->
     <script src="js/app.js"></script>
   </head>
-  <body ng-app="starter">
+  <body ng-app="join">
 
     <ion-pane class="join-screen">
       <img class="join-cloud" src="img/clouds-02.png" />
-      <ion-content>
 
-        <form class="join-form">
-          <label>NAME</label>
-          <input type="text" name="name" value="abdurahman" />
+      <ion-content ng-controller="joinController">
 
-          <label>USERNAME</label>
-          <input type="text" name="username" value="abu" />
+        <form class="join-form" name="joinus" novalidate>
 
-          <label>EMAIL</label>
-          <input type="email" name="email" value="abu@gmail.com" />
+          <label>NAME</label> <p ng-show="joinus.name.$error.required" ng-if="joinus.name.$dirty" class="tips">Name is required</p>
+          <input type="text" name="name" ng-model="newName" placeholder="John Smith" required>
 
-          <label>PASSWORD</label>
-          <input type="password" name="password" value="*********" />
+          <label>USERNAME</label> <p ng-show="joinus.username.$error.required" ng-if="joinus.username.$dirty" class="tips">User name is required</p>
+          <input type="text" name="username" ng-model="newUsername" placeholder="John" required>
 
-          <label>PASSWORD AGAIN</label>
-          <input type="password" name="password" value="*********" />
+          <label>EMAIL</label> <p ng-show="joinus.email.$error.required || joinus.email.$error.email" ng-if="joinus.email.$dirty" class="tips">Enter valid email</p>
+          <input type="email" name="email" ng-model="newEmail" placeholder="John@gmail.com" required>
 
-          <input type="submit" name="button" value="AND OFF WE GO!" class="join-submit" onclick="join()" />
+          <label>PASSWORD</label> <p ng-show="joinus.password.$error.required || joinus.password.$error.minlength" ng-if="joinus.password.$dirty || joinus.password.minlength" class="tips">At least 6 letters</p>
+          <input type="password" name="password" ng-model="newPassword" ng-minlength='6' placeholder="*******" required>
+
+          <label>PASSWORD AGAIN</label> <p ng-show="joinus.newpassword.$error.required || joinus.password.$error.minlength" ng-if="joinus.newpassword.$dirty || joinus.newpassword.minlength" class="tips">At least 6 letters</p>
+          <input type="password" name="newpassword" ng-model="newPasswordAgain" ng-minlength='6' placeholder="*******"  required>
+
+          <button name="button" class="join-submit"  ng-click="join()" ng-disabled="joinus.$invalid">AND OFF WE GO!</button>
 
         </form>
 
       </ion-content>
     </ion-pane>
 
-
+  <script src="js/join.js"></script>
   </body>
 </html>
