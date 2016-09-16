@@ -45,7 +45,7 @@
           <input type="text" name="name" ng-model="newName" placeholder="John Smith" required>
 
           <label>USERNAME</label> <p ng-show="joinus.username.$error.required" ng-if="joinus.username.$dirty" class="tips">User name is required</p>
-          <input type="text" name="username" ng-model="newUsername" placeholder="John" required>
+          <input type="text" name="usernames" ng-model="newUsername" placeholder="John" required>
 
           <label>EMAIL</label> <p ng-show="joinus.email.$error.required || joinus.email.$error.email" ng-if="joinus.email.$dirty" class="tips">Enter valid email</p>
           <input type="email" name="email" ng-model="newEmail" placeholder="John@gmail.com" required>

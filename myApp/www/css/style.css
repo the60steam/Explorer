@@ -93,7 +93,7 @@ input.ng-valid.ng-dirty{
 .tips{
   float: right;
   color: #E52420;
-  font-style: italic; 
+  font-style: italic;
 }
 
 
@@ -217,3 +217,15 @@ input.ng-valid.ng-dirty{
 
 
 /*style for login page ends*/
+
+/*styles for the first page starts*/
+
+.first-screen{
+  background-color: #00C8E2;
+}
+
+#top{
+  background-color: #00C8E2;
+}
+
+/*styles for the first pag ends*/

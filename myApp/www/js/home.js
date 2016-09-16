@@ -3,10 +3,10 @@
 // angular.module is a global place for creating, registering and retrieving Angular modules
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
-angular.module('join', ['ionic'])
+angular.module('home', ['ionic'])
 
 .run(function($ionicPlatform) {
-  $ionicPlatform.ready(function() {
+  $ionicPlatform.ready(function() { 
     if(window.cordova && window.cordova.plugins.Keyboard) {
       // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
       // for form inputs)
@@ -22,27 +22,7 @@ angular.module('join', ['ionic'])
     }
   });
 })
-.controller("joinController", function($scope){
-
-  $scope.data={};
-
-  $scope.userData=[];
-
-  $scope.join=function(){
-    window.location="login.html";
-
-    $scope.data["name"]=$scope.newName;
-    $scope.data["usernames"]=$scope.newUsername;
-    $scope.data["email"]=$scope.newEmail;
-    $scope.data["password"]=$scope.newPassword;
-    $scope.data["newusername"]=$scope.newPassword;
-
-
-    $scope.userData.push($scope.data);
-
-    console.log($scope.userData[0]);
-  }
-
+.controller("homeController", function($scope){
 
 
 });
