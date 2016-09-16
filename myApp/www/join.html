@@ -34,37 +34,31 @@
   </head>
   <body ng-app="starter">
 
-    <ion-pane class="home-screen">
-
+    <ion-pane class="join-screen">
+      <img class="join-cloud" src="img/clouds-02.png" />
       <ion-content>
 
-        <img class="home-logo" src="img/logo-1.png" />
-        <img class="home-cloud1" src="img/clouds-01.png" />
-        <img class="home-cloud2" src="img/clouds-01.png" />
+        <form class="join-form">
+          <label>NAME</label>
+          <input type="text" name="name" value="abdurahman" />
 
-        <h4 class="home-header">Ready for take off ?</h4>
+          <label>USERNAME</label>
+          <input type="text" name="username" value="abu" />
 
-       <div class="home-button">
-         <a href="join.html">
-           <button class="button-calm">
-             JOIN THE CREW
-           </button>
-         </a>
+          <label>EMAIL</label>
+          <input type="email" name="email" value="abu@gmail.com" />
 
-         <br />
-         <a href="login.html">
-           <button class="button-calm">
-             LOGIN
-           </button>
-         </a>
+          <label>PASSWORD</label>
+          <input type="password" name="password" value="*********" />
 
-       </div>
+          <label>PASSWORD AGAIN</label>
+          <input type="password" name="password" value="*********" />
 
+          <input type="submit" name="button" value="AND OFF WE GO!" class="join-submit" onclick="join()" />
 
-
+        </form>
 
       </ion-content>
-
     </ion-pane>
 
 
