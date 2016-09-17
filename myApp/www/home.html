@@ -32,6 +32,22 @@
 
   <!-- your app's js -->
   <script src="js/app.js"></script>
+
+
+  <style>
+    *::-webkit-input-placeholder {
+      color: #A6ACAF !important;
+    }
+
+    *:-moz-placeholder {
+      color: #A6ACAF !important;
+    }
+
+    *:-ms-input-placeholder {
+      /* IE10+ */
+      color: #A6ACAF !important;
+    }
+  </style>
 </head>
 
 <body ng-app="home">
@@ -40,17 +56,57 @@
 
     <ion-content ng-controller="homeController">
 
-      <div class="tabs tabs-icon-only">
-        <a class="tab-item">
-          <i class="icon ion-home"></i>
-        </a>
-        <a class="tab-item">
-          <i class="icon ion-star"></i>
-        </a>
-        <a class="tab-item">
-          <i class="icon ion-gear-a"></i>
-        </a>
+      <div class="row" id="tops">
+        <div class="col col-33"><img src="img/rocket-01.png" /></div>
+        <div class="col col-33"><img src="img/star-01.png" /></div>
+        <div class="col col-33"><img src="img/helmet-01.png" /></div>
       </div>
+
+      <!--<div class="row" id="cloud">
+        <img src="img/cloudline.png" />
+      </div>-->
+
+
+      <div class="navdiv">
+
+        <div class="row">
+
+
+          <div class="col col-100">
+            <div class="list list-inset">
+              <label class="item item-input" id="searchbar">
+                <i class="icon ion-search placeholder-icon"></i>
+                <input type="text" placeholder="People, Place, Challenge" id="search">
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="row" id="navbars">
+          <div class="col col-33">CHALLENGES</div>
+          <div class="col col-33">GREATEST</div>
+          <div class="col">NEWEST</div>
+        </div>
+
+      </div>
+
+      <div id="news">
+        <h5>MONDAY CHALLENGE</h5><br />
+        <P>Take a picture with your bff</P>
+      </div>
+
+      <div class="row" id="derek">
+        <img src="img/derek.png" />
+      </div>
+
+      <div class="row" id="charle">
+        <img src="img/charle.png" />
+      </div>
+
+
+
+
+
 
 
     </ion-content>

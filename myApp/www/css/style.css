@@ -62,17 +62,6 @@
 
 /*style for join us page starts*/
 
-
-*::-webkit-input-placeholder {
-  color: #fff !important;
-}
-*:-moz-placeholder {
-  color: #fff !important;
-}
-*:-ms-input-placeholder { /* IE10+ */
-  color: #fff !important;
-}
-
 /*
 input[required].ng-pristine{
   border-color:#e74c3c;
@@ -220,12 +209,84 @@ input.ng-valid.ng-dirty{
 
 /*styles for the first page starts*/
 
-.first-screen{
+#tops div img{
+  width: 48px;
+  height: 48px;
+}
+
+#tops{
   background-color: #00C8E2;
 }
 
-#top{
-  background-color: #00C8E2;
+#tops div {
+  text-align: center;
+  margin-top: 15px;
 }
+
+#cloud{
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+#cloud img{
+  width: 100%;
+  height: 30px;
+  padding: 0px;
+  margin: 0px;
+  z-index: 10;
+
+}
+
+.navdiv{
+  background-image: url("img/cloudline.png");
+  z-index: 10;
+}
+
+#searchbar{
+  background-color: #D6EAF8;
+  height: 30px;
+  border-radius: 2px;
+}
+
+#navbars{
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  margin-top: 15px;
+}
+#navbars div{
+  width: 100%;
+  text-align: center;
+  background-color: #D6EAF8;
+  border-top: 3px solid #053C52;
+  border-bottom: 3px solid #053C52;
+  color: #053C52;
+  font-weight: bold;
+}
+
+#news{
+  background-color: #053C52;
+  height: 35px;
+  width: 100%;
+  padding:0px;
+  margin: 0px;
+  color: #fff;
+  margin-top: -10px;
+}
+
+#news h5{
+ margin-left: 20px;
+ position: relative;
+ top: 10px;
+  color: #fff;
+
+}
+
+
+
+#derek img, #charle img{
+  margin: 15px;
+}
+
 
 /*styles for the first pag ends*/
