@@ -34,7 +34,7 @@
 
 
     <style>
-    
+
     *::-webkit-input-placeholder {
       color: #fff !important;
     }
@@ -61,13 +61,13 @@
           <input type="email" name="email" ng-model="email" placeholder="john@gmail.com" required/>
 
           <label>PASSWORD</label>  <p ng-show="loginus.password.$error.required || loginus.password.$error.minlength" ng-if="loginus.password.$dirty || loginus.password.minlength" class="tips">At least 6 letters</p>
-          <input type="password" name="password" ng-model="password" ng-minlength='6' placeholder="*******" required/>
+          <input type="password" name="password" ng-model="password" ng-minlength='2' placeholder="*******" required/>
 
           <button  name="button" class="login-submit" ng-click="login()" ng-disabled="loginus.$invalid" >AND OFF WE GO!</button>
 
         </form>
 
-      </ion-content>
+      </ion-content> 
     </ion-pane>
 
     <script src="js/login.js"></script>

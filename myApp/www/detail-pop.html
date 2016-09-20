@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+  <title></title>
+
+  <link rel="manifest" href="manifest.json">
+
+  <!-- un-comment this code to enable service worker
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('service-worker.js')
+          .then(() => console.log('service worker installed'))
+          .catch(err => console.log('Error', err));
+      }
+    </script>-->
+
+  <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+  <link href="css/detail-pop.css" rel="stylesheet">
+
+  <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+  <!-- ionic/angularjs js -->
+  <script src="lib/ionic/js/ionic.bundle.js"></script>
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+
+
+  <!-- cordova script (this will be a 404 during development) -->
+  <script src="cordova.js"></script>
+
+  <!-- your app's js -->
+  <script src="js/detail-pop.js"></script>
+
+
+  <style>
+    *::-webkit-input-placeholder {
+      color: #A6ACAF !important;
+    }
+
+    *:-moz-placeholder {
+      color: #A6ACAF !important;
+    }
+
+    *:-ms-input-placeholder {
+      /* IE10+ */
+      color: #A6ACAF !important;
+    }
+  </style>
+</head>
+
+<body ng-app="detail-pop">
+
+  <ion-pane class="first-screen">
+
+    <ion-content ng-controller="detailPop">
+
+      <div class="row" id="tops">
+        <div class="col col-33"><a href="home-during-special.html"><img src="img/rocket-01.png" class="roclet" /></a>  </div>
+        <div class="col col-33"><img src="img/star-01.png" class="star" /></div>
+        <div class="col col-33"><img src="img/helmet-01.png" class="helmet" /></div>
+      </div>
+
+
+      <div class="navdiv">
+
+        <img src="img/clouds.png" id="cloudline" />
+
+        <div class="col col-100" id="searchbox">
+          <div class="list list-inset" id="searchme">
+            <label class="item item-input" id="searchbar">
+              <i class="icon ion-search placeholder-icon"></i>
+              <input type="text" placeholder="People, Places, Challenges" id="search">
+            </label>
+          </div>
+        </div>
+
+
+        <div class="row" id="detail-page-map">
+          <img src="img/detail-map.jpg" />
+        </div>
+
+      </div>
+
+      <div id="news">
+        <h5>MONDAY CHALLENGE</h5>
+        <br />
+        <P>TAKE A PICTURE WITH YOUR BFF</P>
+      </div>
+
+      <div id="location">
+        <i class="icon ion-ios-location-outline"></i>
+        <P>MANUFAKTURA</P>
+      </div>
+
+      <div class="start">
+        <div class="row">
+          <div class="col col-100" id="take-challenge">
+            <h5>TAKE THE CHALLENGE</h5>
+          </div>
+        </div>
+        <div class="row" id="upload">
+          <div class="col col-100"><img src="img/upload-small.png" /></div>
+          <div class="col col-100"><img src="img/camera-small.png" /></div>
+        </div>
+      </div>
+
+
+      <div class="row" id="detail-hug">
+        <img src="img/detail-hug.jpg" />
+      </div>
+
+      <div class="row" id="name-date">
+        <div class="col col-50" id="name">
+          <h6>CHARLE - NEWBIE</h6>
+        </div>
+
+        <div class="col col-100" id="date">
+          <h6>16/09/2016</h6>
+        </div>
+      </div>
+
+
+      <div class="row" id="charle">
+        <img src="img/group.jpg" />
+      </div>
+
+   <!--code for the pop up-->
+      <script id="image-modal.html" type="text/ng-template">
+        <div class="modal image-modal transparent" ng-click="closeModal()">
+          <ion-pane class="transparent">
+            <img ng-src="img/pop-up-one.png" class="fullscreen-image" />
+          </ion-pane>
+        </div>
+      </script>
+
+    </ion-content>
+
+  </ion-pane>
+
+  <script src="js/home.js"></script>
+
+</body>
+
+</html>

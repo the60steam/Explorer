@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+  <title></title>
+
+  <link rel="manifest" href="manifest.json">
+
+  <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+  <link href="css/home-during-special.css" rel="stylesheet">
+
+  <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+  <!-- ionic/angularjs js -->
+  <script src="lib/ionic/js/ionic.bundle.js"></script>
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+
+
+  <!-- cordova script (this will be a 404 during development) -->
+  <script src="cordova.js"></script>
+
+  <!-- your app's js -->
+  <script src="js/home-during-special.js"></script>
+
+
+  <style>
+    *::-webkit-input-placeholder {
+      color: #A6ACAF !important;
+    }
+
+    *:-moz-placeholder {
+      color: #A6ACAF !important;
+    }
+
+    *:-ms-input-placeholder {
+      /* IE10+ */
+      color: #A6ACAF !important;
+    }
+  </style>
+</head>
+
+<body ng-app="home-during-special">
+
+  <ion-pane class="first-screen">
+
+    <ion-content overflow-scroll="true">
+
+      <div class="row" id="tops">
+        <div class="col col-33"><img src="img/rocket-01.png" class="roclet" /></div>
+        <div class="col col-33"><img src="img/star-01.png" class="star" /></div>
+        <div class="col col-33"><img src="img/helmet-01.png" class="helmet" /></div>
+      </div>
+
+
+      <div class="navdiv">
+
+        <img src="img/clouds.png" id="cloudline" />
+
+        <div class="col col-100" id="searchbox">
+          <div class="list list-inset" id="searchme">
+            <label class="item item-input" id="searchbar">
+              <i class="icon ion-search placeholder-icon"></i>
+              <input type="text" placeholder="People, Places, Challenges" id="search">
+            </label>
+          </div>
+        </div>
+
+        <div class="row" id="navbars">
+          <div class="col col-33">
+            <p class="challenge">CHALLENGES</p>
+          </div>
+          <div class="col col-33">
+            <p class="greatest">GREATEST</p>
+          </div>
+          <div class="col">
+            <p class="newest">NEWEST</p>
+          </div>
+        </div>
+      </div>
+
+     <a href="special-upload.html">
+       <div class="row" id="group-01">
+         <img src="img/group-01.jpg" />
+       </div>
+     </a>
+
+
+
+      <div id="news">
+        <h5>SPECIAL CHALLENGE</h5>
+        <br />
+        <P>SING A SONG IN A BIG AULA</P>
+      </div>
+
+      <div id="location">
+        <i class="icon ion-ios-location-outline"></i>
+        <P>UNIVERSITY FACULTY INFORMATICS</P>
+      </div>
+
+      <div class="row" id="derek">
+        <img src="img/derek.jpg" />
+      </div>
+
+
+      <div id="monday">
+        <h6>MONDAY CHALLENGE</h6>
+        <br />
+        <P>TAKE A PICTURE WITH YOUR BFF</P>
+      </div>
+
+      <div id="location-2">
+        <i class="icon ion-ios-location-outline"></i>
+        <P>UNIVERSITY FACULTY INFORMATICS</P>
+      </div>
+
+      <div class="row" id="charle">
+        <img src="img/detail-hug.jpg" />
+      </div>
+
+
+      <div id="tuesday">
+        <h6>MONDAY CHALLENGE</h6>
+        <br />
+        <P>TAKE A PICTURE WITH YOUR BFF</P>
+      </div>
+
+      <div id="location-3">
+        <i class="icon ion-ios-location-outline"></i>
+        <P>UNIVERSITY FACULTY INFORMATICS</P>
+      </div>
+
+
+    </ion-content>
+
+  </ion-pane>
+
+  <script src="js/home.js"></script>
+
+</body>
+
+</html>

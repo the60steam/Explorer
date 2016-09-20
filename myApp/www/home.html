@@ -8,15 +8,6 @@
 
   <link rel="manifest" href="manifest.json">
 
-  <!-- un-comment this code to enable service worker
-    <script>
-      if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('service-worker.js')
-          .then(() => console.log('service worker installed'))
-          .catch(err => console.log('Error', err));
-      }
-    </script>-->
-
   <link href="lib/ionic/css/ionic.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 
@@ -26,6 +17,8 @@
 
   <!-- ionic/angularjs js -->
   <script src="lib/ionic/js/ionic.bundle.js"></script>
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+
 
   <!-- cordova script (this will be a 404 during development) -->
   <script src="cordova.js"></script>
@@ -57,56 +50,71 @@
     <ion-content ng-controller="homeController">
 
       <div class="row" id="tops">
-        <div class="col col-33"><img src="img/rocket-01.png" /></div>
-        <div class="col col-33"><img src="img/star-01.png" /></div>
-        <div class="col col-33"><img src="img/helmet-01.png" /></div>
+        <div class="col col-33"><img src="img/rocket-01.png" class="roclet" /></div>
+        <div class="col col-33"><img src="img/star-01.png" class="star" /></div>
+        <div class="col col-33"><img src="img/helmet-01.png" class="helmet" /></div>
       </div>
-
-      <!--<div class="row" id="cloud">
-        <img src="img/cloudline.png" />
-      </div>-->
 
 
       <div class="navdiv">
 
-        <div class="row">
+        <img src="img/clouds.png" id="cloudline" />
 
 
-          <div class="col col-100">
-            <div class="list list-inset">
-              <label class="item item-input" id="searchbar">
-                <i class="icon ion-search placeholder-icon"></i>
-                <input type="text" placeholder="People, Place, Challenge" id="search">
-              </label>
-            </div>
+        <div class="col col-100" id="searchbox">
+          <div class="list list-inset" id="searchme">
+            <label class="item item-input" id="searchbar">
+              <i class="icon ion-search placeholder-icon"></i>
+              <input type="text" placeholder="People, Places, Challenges" id="search">
+            </label>
           </div>
         </div>
 
+
         <div class="row" id="navbars">
-          <div class="col col-33">CHALLENGES</div>
-          <div class="col col-33">GREATEST</div>
-          <div class="col">NEWEST</div>
+          <div class="col col-33">
+            <p class="challenge">CHALLENGES</p>
+          </div>
+          <div class="col col-33">
+            <p class="greatest">GREATEST</p>
+          </div>
+          <div class="col">
+            <p class="newest">NEWEST</p>
+          </div>
         </div>
 
       </div>
 
+     <a href="detail-page-before.html">
+       <div class="row" id="derek">
+         <img src="img/derek.jpg" />
+       </div>
+     </a>
+
+
       <div id="news">
-        <h5>MONDAY CHALLENGE</h5><br />
-        <P>Take a picture with your bff</P>
+        <h5>MONDAY CHALLENGE</h5>
+        <br />
+        <P>TAKE A PICTURE WITH YOUR BFF</P>
       </div>
 
-      <div class="row" id="derek">
-        <img src="img/derek.png" />
+      <div id="location">
+        <i class="icon ion-ios-location-outline"></i>
+        <P>STATUE OF A BEAR</P>
       </div>
 
       <div class="row" id="charle">
-        <img src="img/charle.png" />
+        <img src="img/charle.jpg" />
       </div>
 
 
-
-
-
+      <script id="image-modal.html" type="text/ng-template">
+        <div class="modal image-modal transparent" ng-click="closeModal()">
+          <ion-pane class="transparent">
+            <img ng-src="img/pop-up-smaller.png" class="fullscreen-image" />
+          </ion-pane>
+        </div>
+      </script>
 
 
     </ion-content>
@@ -114,6 +122,7 @@
   </ion-pane>
 
   <script src="js/home.js"></script>
+
 </body>
 
 </html>
