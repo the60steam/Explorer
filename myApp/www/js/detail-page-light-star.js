@@ -3,7 +3,7 @@
 // angular.module is a global place for creating, registering and retrieving Angular modules
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
-angular.module('detail-page-before', ['ionic'])
+angular.module('light-star', ['ionic'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -23,8 +23,7 @@ angular.module('detail-page-before', ['ionic'])
   });
 })
 
-.controller('detailPageBeforeController', ['$scope', '$ionicModal',
-
+.controller('lightStar', ['$scope', '$ionicModal',
 function ($scope, $ionicModal) {
 
   $ionicModal.fromTemplateUrl('image-modal.html', {
@@ -53,22 +52,16 @@ function ($scope, $ionicModal) {
   // Execute action on remove modal
   $scope.$on('modal.removed', function() {
     // Execute action
-
   });
   $scope.$on('modal.shown', function() {
     console.log('Modal is shown!');
   });
 
-  $scope.redirect=function(){
-    window.location.replace("detail-page-dark-star.html");
-  }
+
 
   $(document).ready(function() {
     $scope.openModal();
     setTimeout($scope.closeModal,5000);
-
   });
-
 }
-
 ]);

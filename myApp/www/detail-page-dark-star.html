@@ -8,8 +8,17 @@
 
   <link rel="manifest" href="manifest.json">
 
+  <!-- un-comment this code to enable service worker
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('service-worker.js')
+          .then(() => console.log('service worker installed'))
+          .catch(err => console.log('Error', err));
+      }
+    </script>-->
+
   <link href="lib/ionic/css/ionic.css" rel="stylesheet">
-  <link href="css/detail-special.css" rel="stylesheet">
+  <link href="css/detail-page-dark-star.css" rel="stylesheet">
 
   <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
     <link href="css/ionic.app.css" rel="stylesheet">
@@ -24,7 +33,7 @@
   <script src="cordova.js"></script>
 
   <!-- your app's js -->
-  <script src="js/detail-special.js"></script>
+  <script src="js/detail-page-dark-star.js"></script>
 
 
   <style>
@@ -43,11 +52,11 @@
   </style>
 </head>
 
-<body ng-app="detail-special">
+<body ng-app="dark-star">
 
   <ion-pane class="first-screen">
 
-    <ion-content ng-controller="detailSpecial">
+    <ion-content ng-controller="darkStar">
 
       <div class="row" id="tops">
         <div class="col col-33"><img src="img/rocket-01.png" class="roclet" /></div>
@@ -64,65 +73,70 @@
           <div class="list list-inset" id="searchme">
             <label class="item item-input" id="searchbar">
               <i class="icon ion-search placeholder-icon"></i>
-              <input type="text" placeholder="People, Place, Challenge" id="search">
+              <input type="text" placeholder="People, Places, Challenges" id="search">
             </label>
           </div>
         </div>
 
 
         <div class="row" id="detail-page-map">
-          <img src="img/map_special.jpg" />
+          <img src="img/detail-map.jpg" />
         </div>
 
       </div>
 
       <div id="news">
-        <h5>EVENT CHALLENGE</h5>
+        <h5>MONDAY CHALLENGE</h5>
         <br />
-        <P>SING A SONG IN A BIG AULA</P>
+        <P>TAKE A PICTURE WITH YOUR BFF</P>
       </div>
 
       <div id="location">
         <i class="icon ion-ios-location-outline"></i>
-        <P>UNIVERSITY FACULTY INFORMATICS</P>
+        <P>MANUFAKTURA</P>
       </div>
 
-      <div id="thanks">
-        <p>THANKS FOR THE PICTURE,<br />
-        WE ARE STARSTRUCK!</p>
-      </div>
+      <div class="start">
+        <div class="row">
+          <div class="col col-100" id="take-challenge">
+            <P id="rank">YOU'RE RANKED</P>
+            <br />
+            <h4 id="score">17TH OUT OF 40</h4>
+          </div>
+        </div>
 
+      </div>
 
 
       <div class="row" id="detail-hug">
-        <img src="img/group-01.jpg" />
+        <img src="img/detail-hug.jpg" />
+        <a href="detail-page-light-star.html">
+          <img src="img/star-01.png" id="stars" />
+        </a>
       </div>
 
       <div class="row" id="name-date">
-        <div class="col col-100" id="name">
-          <h6><span class="red">CHARLE</span> - NEWBIE</h6>
+        <div class="col col-50" id="name">
+          <h6>CHARLE - NEWBIE</h6>
+        </div>
+
+        <div class="col col-100" id="date">
+          <h6>16/09/2016</h6>
         </div>
       </div>
 
 
-      <div class="row" id="group-02">
-        <img src="img/group-02.jpg" />
-      </div>
-
-      <div class="row" id="name-date">
-        <div class="col col-100" id="name">
-          <h6 id="text"><span class="red">ABU</span> - MISSION SPECIALIST</h6>
-        </div>
+      <div class="row" id="charle">
+        <img src="img/group.jpg" />
       </div>
 
       <script id="image-modal.html" type="text/ng-template">
-        <div class="modal image-modal transparent" ng-click="closeModal()">
+        <ion-modal-view class="modal image-modal transparent" ng-click="closeModal()">
           <ion-pane class="transparent">
-            <img ng-src="img/pop-up-five.png" class="fullscreen-image" />
+            <img ng-src="img/pop-up-one.png" class="fullscreen-image" />
           </ion-pane>
-        </div>
+        </ion-modal-view>
       </script>
-
 
     </ion-content>
 

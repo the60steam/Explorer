@@ -1,0 +1,252 @@
+/*styles for the first page starts*/
+
+#tops div img{
+  width: 48px;
+  height: 48px;
+}
+
+#tops{
+  background-color: #00C8E2;
+  height: 120px;
+}
+
+#tops div {
+  text-align: center;
+  margin-top: 15px;
+}
+
+#tops div .star, #tops div .helmet {
+  opacity: 0.3;
+}
+
+#cloudline{
+  position: relative;
+  top: -50px;
+}
+
+.navdiv{
+  background-color: #fff;
+  height: 100px;
+}
+
+#searchbar{
+  background-color: #ecfbff;
+  height: 30px;
+  border-radius: 2px;
+}
+
+#searchbox{
+background-color: #fff;
+position: relative;
+top: -75px;
+height: 35px;
+}
+
+#searchme{
+  position: relative;
+  top: -25px;
+}
+
+#detail-page-map{
+  height: 130px;
+  width: 100%;background-color: #fff;
+  position: relative;
+  top: -70px;
+  padding: 0px;
+  margin: 0px;
+}
+#navbars{
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  position: relative;
+  top: -70px;
+  height: 40px;
+  border-top: 3px solid #053C52;
+  border-bottom: 3px solid #053C52;
+}
+#navbars div{
+  width: 100%;
+  text-align: center;
+  background-color: #ecfbff;
+  color: #053C52;
+  font-weight: bold;
+}
+
+#navbars div .challenge{
+  width: 100%;
+  text-align: center;
+  background-color: #D6EAF8;
+  color: #053C52;
+  font-weight: bold;
+  border-bottom: 3px solid #053C52;
+}
+
+
+#news{
+  background-color: #053C52;
+  height: 40px;
+  width: 100%;
+  padding:0px;
+  margin: 0px;
+  color: #fff;
+  margin-top: -10px;
+  position: relative;
+  top: 60px;
+}
+
+#news h5{
+ margin-left: 20px;
+ position: relative;
+ top: 4px;
+ color: #fff;
+}
+
+#news p{
+ margin-left: 20px;
+ position: relative;
+ top: -25px;
+color: #fff;
+font-size: 70%;
+}
+
+#location{
+  background-color: #fff;
+  height: 20px;
+  position: relative;
+  top: 60px;
+}
+#location i{
+  position: relative;
+  left: 20px;
+  color: #053C52;
+  top: 1px;
+}
+
+#location p{
+  font-size: 70%;
+  position: relative;
+  top: -19px;
+  left: 40px;
+  color: #053C52;
+
+}
+
+.start{
+  width: 100%;
+  height: 70px;
+  background-color: #ecfbff;
+  position: relative;
+  top: 60px;
+  text-align: center;
+  font-weight: light;
+}
+#rank{
+  color: #053C52;
+  font-size: 115%;
+
+}
+#score{
+  font-weight: bold;
+  color: red;
+  position: relative;
+  top: -37px;
+  font-size: 130%;
+}
+
+#upload {
+  width: 76%;
+  margin-left: 12%;
+}
+
+#upload div a img, #camera div a img{
+  height: 51px;
+  width: 73px;
+  position: relative;
+  top: -15px;
+}
+
+#detail-hug{
+  width: 100%;
+  height: 200px;
+  padding: 0px;
+  margin: 0px;
+  position: relative;
+  top: 50px;
+}
+
+#detail-hug img{
+  width: 100%;
+  height: 200px;
+  padding: 0px;
+  margin: 0px;
+}
+
+#detail-hug #stars{
+  width: 43px;
+  height: 41px;
+  padding: 0px;
+  margin: 0px;
+  position: absolute;
+  top: 140px;
+  z-index: 100;
+  opacity: 0.6;
+  left: 317px;
+}
+
+.transparent {
+  background: transparent !important;
+}
+.image-modal {
+  width: 100% !important;
+  height: 100%;
+  top: 0 !important;
+  left: 0 !important;
+}
+.fullscreen-image {
+  max-width: 100%;
+  max-height: 100%;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  overflow: auto;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+@media (max-width: 679px) {
+  .active .modal-backdrop-bg {
+    opacity: .5;
+  }
+  .modal-backdrop-bg {
+    -webkit-transition: opacity 300ms ease-in-out;
+    transition: opacity 300ms ease-in-out;
+    background-color: #000;
+    opacity: 0;
+  }
+}
+
+
+#name-date{
+  height: 20px;
+  background-color: #fff;
+  position: relative;
+  top: 45px;
+}
+
+#name-date div h6{
+  line-height: 20px;
+  position: relative;
+  top: -15px;
+  font-size: 70%;
+
+}
+
+#name h6{
+  float: left;
+}
+
+#date h6{
+  float: right;
+}
