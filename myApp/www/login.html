@@ -55,7 +55,7 @@
 
       <ion-content ng-controller="loginController">
 
-        <form class="login-form" name="loginus">
+        <form class="login-form" name="loginus"> 
 
           <label>E-MAIL</label> <p ng-show="loginus.email.$error.required || loginus.email.$error.email" ng-if="loginus.email.$dirty" class="tips">Enter valid email</p>
           <input type="email" name="email" ng-model="email" placeholder="john@gmail.com" required/>
@@ -67,7 +67,7 @@
 
         </form>
 
-      </ion-content> 
+      </ion-content>
     </ion-pane>
 
     <script src="js/login.js"></script>
